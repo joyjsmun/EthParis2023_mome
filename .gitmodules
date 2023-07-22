@@ -4,3 +4,6 @@
 [submodule "backend/lib/openzeppelin-contracts"]
 	path = backend/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "backend/lib/foundry-starter-kit"]
+	path = backend/lib/foundry-starter-kit
+	url = https://github.com/smartcontractkit/foundry-starter-kit
