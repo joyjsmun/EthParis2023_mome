@@ -10,21 +10,21 @@ struct token {
         address owner;
 }
 
-    IERC721 public momiNFT;
+    IERC721 public momeNFT;
     IERC20 public apeCoin;
     mapping(uint256 => uint256) public tipAmounts; // tokenId => amount
     mapping(uint256 => token) public tokens; // tokenId => token
     
 
-    constructor(address _momiNFT, address _apeCoin) {
-        momiNFT = IERC721(_momiNFT);
+    constructor(address _momeNFT, address _apeCoin) {
+        momeNFT = IERC721(_momeNFT);
         apeCoin = IERC20(_apeCoin);
     }
 
     function tip(uint256 tokenId, uint amount) public {
         tipAmounts[tokenId] += amount;
         apeCoin.transferFrom(msg.sender, address(this), amount);
-        momiNFT.transferFrom(address(this), msg.sender, tokenId);
+        momeNFT.transferFrom(address(this), msg.sender, tokenId);
     }
 
     function registerToken(uint256 tokenId) public {
@@ -35,7 +35,7 @@ struct token {
         uint256 amount = tipAmounts[tokenId];
         tipAmounts[tokenId] = 0;
         apeCoin.transferFrom(address(this), msg.sender, amount);
-        momiNFT.transferFrom(msg.sender, address(this), tokenId);
+        momeNFT.transferFrom(msg.sender, address(this), tokenId);
     }
 }
 

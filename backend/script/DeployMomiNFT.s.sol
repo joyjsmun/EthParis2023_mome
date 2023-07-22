@@ -1,13 +1,13 @@
 pragma solidity ^0.8.0;
 
-import "../contracts/MomiNFT.sol";
+import "../contracts/MomeNFT.sol";
 
-contract DeployMomiNft {
+contract DeployMomeNft {
 
     function run() {
         uint256 deployerPrivateKey = vm.envUint("OWNER_1_PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
-        address MomiNFT = new MomiNFT();
+        address MomeNFT = new MomeNFT();
         vm.endBroadcast();
     }
 }

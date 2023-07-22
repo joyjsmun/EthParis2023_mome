@@ -4,7 +4,7 @@
 pragma solidity ^0.8.18;
 
 import "../contracts/ERC6551Registry.sol";
-import "../contracts/MomiNft.sol";
+import "../contracts/MomeNft.sol";
 
 contract Deploy6551Account {
     address public constant goerliRegistryAddress = 0x02101dfB77FDE026414827Fdc604ddAF224F0921;
@@ -16,9 +16,9 @@ contract Deploy6551Account {
         ERC6551Registry registry = ERC6551Registry(goerliRegistryAddress);
         vm.startBroadcast(deployerPrivateKey);
         registry.createAccount(
-            address(new MomiNft()),
+            address(new MomeNft()),
             5,
-            address(new MomiNft()),
+            address(new MomeNft()),
             3031,
             0,
             ""
