@@ -18,6 +18,7 @@ module.exports = {
           sblue: "#4F9CD1",
           spurple: "#BA7EEA",
           sred: "#FF2E00",
+          beige: "#E3D0B0",
         },
       },
       fontSize: {

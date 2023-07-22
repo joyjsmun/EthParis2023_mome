@@ -19,7 +19,7 @@ export const Header = () => {
   }
 
   if (router === "/memories" || router === "/moments") {
-    color = "bg-black";
+    color = "bg-[#E3D0B0]";
   } else {
     color = "bg-transparent";
   }
@@ -34,7 +34,7 @@ export const Header = () => {
           <div className="bg-[url('/images/landing/logo.png')] bg-cover w-[12rem] h-11"></div>
         </Link>
       </div>
-      <div className="text-[1.6vw] text-white border-white border px-5 py-2 rounded-[20px]">
+      <div className="text-[1.6vw] text-white border-white border px-10 py-2 rounded-[24px] hover:bg-tp-beige hover:text-black">
         Login
       </div>
     </div>
