@@ -26,13 +26,17 @@ export const Header = () => {
 
   return (
     <div
-      className={`${color} w-[100vw] h-24 flex justify-between items-center px-20 text-white z-40 relative`}
+      className={`${color} w-[100vw] h-24 flex justify-between items-center px-20 text-black z-40 relative`}
     >
       {/* !! font weight  */}
-      <div className="text-2xl font-extrabold">
-        <Link href={"/"}>MoMe</Link>
+      <div className="text-2xl font-extrabold w-full">
+        <Link href={"/"}>
+          <div className="bg-[url('/images/landing/logo.png')] bg-cover w-[12rem] h-11"></div>
+        </Link>
       </div>
-      <div>Connect Login</div>
+      <div className="text-[1.6vw] text-white border-white border px-5 py-2 rounded-[20px]">
+        Login
+      </div>
     </div>
   );
 };
