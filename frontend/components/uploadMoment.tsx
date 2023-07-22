@@ -73,7 +73,7 @@ const UploadMoment = () => {
       </section>
       <section
         style={{ color: "white" }}
-        className=" flex items-center w-2/5 h-screen p-16 bg-[url('/images/uploadCover.png')] bg-gray-400 bg-center bg-no-repeat bg-cover"
+        className=" flex items-center w-2/5 h-screen p-16 bg-[#101B20]  bg-center bg-no-repeat bg-cover"
       >
         <form className="flex flex-col m-0 p-0 w-full" onSubmit={handleSubmit}>
           <div>
@@ -144,7 +144,7 @@ const UploadMoment = () => {
           <div className="flex">
             <button
               type="submit"
-              className="flex items-center mr-5 bg-tp-pgreen hover:bg-blue-700 text-white py-4 px-14 rounded"
+              className="flex items-center mr-5 bg-tp-beige hover:text-[#C46417] text-white py-4 px-14 rounded"
             >
               <svg
                 aria-hidden="true"
@@ -165,7 +165,7 @@ const UploadMoment = () => {
             </button>
             <Link
               href={"/"}
-              className="bg-transparent hover:bg-blue-700 text-white py-4 px-10 border rounded"
+              className="bg-transparent hover:text-[#C46417] text-white py-4 px-10 border rounded"
             >
               Close
             </Link>

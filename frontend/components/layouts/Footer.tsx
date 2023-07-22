@@ -12,7 +12,6 @@ const Footer = () => {
       <div className="flex justify-between ">
         <div className="text-title">MoMe</div>
         <div className="flex flex-col gap-4">
-          <Link href={"/"}>Twitter</Link>
           <Link href={"/"}>Github</Link>
         </div>
       </div>
