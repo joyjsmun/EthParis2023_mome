@@ -4,28 +4,33 @@ pragma solidity ^0.8.9;
 import "openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 import "openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "openzeppelin-contracts/contracts/access/Ownable.sol";
 import "openzeppelin-contracts/contracts/utils/Counters.sol";
 
-import "./TippingContract.sol";   
+import "./TippingContract.sol";
 import "./VotingContract.sol";
+import "./Capsule.sol";
 
-
-contract MyToken is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
+contract MomeNFT is ERC721, ERC721Enumerable, ERC721URIStorage {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
+    Capsule public immutable capsule;
 
-    constructor() ERC721("MOMETokens", "MOME") {}
+    constructor(address capsuleAddress) ERC721("MOMETokens", "MOME") {
 
-    function safeMint(address to, string memory uri) public onlyOwner {
-        uint256 tokenId = _tokenIdCounter.current();
-        _tokenIdCounter.increment();
-        _safeMint(to, tokenId);
-        _setTokenURI(tokenId, uri);
-        
+        capsule = Capsule(capsuleAddress);
     }
 
+    function safeMint(address to, string memory uri) public {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _mint(to, tokenId);
+        _setTokenURI(tokenId, uri);
+    }
+
+    function saveMintToCapsule(uint tokenId) internal {
+        Capsule capsule = Capsule(capsule);
+    }
     // The following functions are overrides required by Solidity.
 
     function _beforeTokenTransfer(address from, address to, uint256 tokenId, uint256 batchSize)
@@ -39,12 +44,7 @@ contract MyToken is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
         super._burn(tokenId);
     }
 
-    function tokenURI(uint256 tokenId)
-        public
-        view
-        override(ERC721, ERC721URIStorage)
-        returns (string memory)
-    {
+    function tokenURI(uint256 tokenId) public view override(ERC721, ERC721URIStorage) returns (string memory) {
         return super.tokenURI(tokenId);
     }
 
