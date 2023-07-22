@@ -3,4 +3,10 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+[rpc_endpoints]
+goerli = "${https://eth-goerli.public.blastapi.io}"
+
+[etherscan]
+goerli = { key = "${JZU2PDQSEEZT3JERXZ28RKF9Y64BQXMZW9}" }
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
