@@ -34,7 +34,7 @@ const PersonalCount = () => {
       const now = new Date().getTime();
 
       // Calculate the next countdown date as 24 hours from the current time
-      const nextCountDownDate = now + 1 * 1 * 7 * 1000;
+      const nextCountDownDate = now + 1 * 20 * 10 * 1000;
 
       // Update the count down every 1 second
       const interval = setInterval(() => {
@@ -55,7 +55,7 @@ const PersonalCount = () => {
         const formattedHours = String(hours).padStart(2, "0");
         const formattedMinutes = String(minutes).padStart(2, "0");
         const formattedSeconds = String(seconds).padStart(2, "0");
-        const countdownString = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+        const countdownString = `${formattedHours}h ${formattedMinutes}m ${formattedSeconds}s`;
 
         // Update the state with the countdown string
         setCountdown(countdownString);
@@ -75,38 +75,16 @@ const PersonalCount = () => {
   }, []);
 
   return (
-    <div>
-      {showLink ? (
-        <div className="w-[100vw]">
-          {/* <div className="flex items-center justify-center text-9xl text-center text-white ">
-            Wooooooo Hoooo!!
-          </div> */}
-          <div className=" flex flex-col items-center justify-center text-center gap-4">
-            <div className="text-8xl text-white  font-bold bg-[#C26217CC] w-[100vw] p-10 ">
-              The New Capsule Is Ready!
-            </div>
-            <div className="flex flex-col gap-3">
-              <Link
-                className="text-4xl text-white  text-center "
-                href="https://testnets.opensea.io/assets/goerli/0x4535104b220fecfd1de2f8edcff94c1d790b79c3/0"
-              >
-                Today Capusle Link →
-              </Link>
-
-              <Link
-                className="text-4xl text-white text-center "
-                href="https://goerli.etherscan.io/tx/0xaf5ca32f5f55d9976515cff719f72b933aed0f3cd2725bd6a92f82dc8dc60cf7"
-              >
-                Today NFT Contract Link →
-              </Link>
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div className="flex items-center justify-center text-9xl text-center text-white bg-[#101B20CC] w-[100vw] p-5">
+    <div className="w-full flex flex-col">
+      <div>
+        {" "}
+        <div className=" text-9xl text-center text-black w-[50vw]">
           {countdown}
         </div>
-      )}
+        <div className="pl-20 text-black font-bold  text-2xl">
+          Before the day ends
+        </div>
+      </div>
     </div>
   );
 };

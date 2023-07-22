@@ -57,7 +57,7 @@ const UploadMoment = () => {
 
   return (
     <div className="flex top-0 absolute w-full">
-      <section className="w-3/5 h-[100vh] bg-[url('/images/landing/landingClock.jpg')] bg-cover bg-center flex items-center justify-center relative">
+      <section className="w-3/5 h-[100vh] bg-[url('/images/landing/uploadCover.jpg')] bg-cover bg-center flex items-center justify-center relative">
         {momentImg && (
           <Image
             src={momentImg}

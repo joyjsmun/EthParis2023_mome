@@ -6,11 +6,11 @@ const Profile = () => {
     <div className="w-full flex flex-col relative -top-[6.5rem]">
       <div className="w-full">
         <Image
-          src={"/images/canyon.png"}
+          src={"/images/userCover.jpg"}
           alt=""
           width={1512}
           height={202}
-          className="h-[30rem] w-full object-cover top-0"
+          className="h-[20rem] w-full object-cover top-0 right-10"
         />
         <div className="flex justify-between pl-28 pr-20">
           <aside className="flex flex-col w-[30vw] text-left">
@@ -92,15 +92,15 @@ const Profile = () => {
             <hr />
           </aside>
           <section className="w-[50vw] mt-8 h-[90vh]">
-            <div className="mb-5 flex gap-2">
-              <button className="border rounded-full py-2 px-11 font-bold bg-tp-pgreen/40 text-tp-pgreen ">
-                Vote
+            <div className="mb-5 flex gap-4">
+              <button className="border rounded-full py-2 px-11 font-bold bg-white hover:bg-tp-beige hover:text-[#C46417]">
+                Moments
               </button>
-              <button className="border rounded-full py-2 px-11 font-bold bg-tp-pblue/40">
-                Post
+              <button className="border rounded-full py-2 px-11 font-bold bg-white hover:bg-tp-beige hover:text-[#C46417] ">
+                Memories
               </button>
-              <button className="border rounded-full py-2 px-11 font-bold bg-tp-spurple">
-                <Link href="/personalMint">Mint</Link>
+              <button className="border rounded-full py-2 px-11 font-bold bg-white hover:bg-tp-beige hover:text-[#C46417]">
+                <Link href="/personalMint">Likes</Link>
               </button>
             </div>
             <div className="flow-col gap-8 columns-3 overflow-auto h-[90%]">
