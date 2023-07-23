@@ -8,6 +8,6 @@ goerli = "${https://eth-goerli.public.blastapi.io}"
 
 [etherscan]
 goerli = { key = "${JZU2PDQSEEZT3JERXZ28RKF9Y64BQXMZW9}" }
-mumbai = { key = "${2IZCVVMQFIEDVX3DMSDI1YMC17UVUPC4XE}"}
+mumbai = { key = "${2IZCVVMQFIEDVX3DMSDI1YMC17UVUPC4XE }" }
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

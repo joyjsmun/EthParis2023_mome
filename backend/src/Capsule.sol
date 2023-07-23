@@ -9,6 +9,7 @@ import "openzeppelin-contracts/contracts/utils/Counters.sol";
 
 contract Capsule is ERC721 {
 
+    uint public constant CAPSULE_DURATION12 = 12 hours;
     uint256 public constant CAPSULE_DURATION = 5 minutes; // should be 12 hours, but for testing purposes is 5 minutes
     uint256 public constant CAPSULE_SIZE = 12;
     uint40 lastCapsuleTime;

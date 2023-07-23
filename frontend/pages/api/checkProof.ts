@@ -3,26 +3,21 @@ import axios from 'axios';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'GET') {
-    res.status(405).json({ message: 'Method Not Allowed' });
-    return;
+    return res.status(405).json({ message: 'Method Not Allowed' });
   }
 
   const { platform, identity, public_key } = req.query;
 
   if (!platform || !identity || !public_key) {
-    res.status(400).json({ message: 'Missing required parameters' });
-    return;
+    return res.status(400).json({ message: 'Missing required parameters' });
   }
 
   try {
-    const response = await axios.get(`https://proof-service.nextnext.id/v1/proof/exists?platform=${encodeURIComponent(platform)}&identity=${encodeURIComponent(identity)}&public_key=${encodeURIComponent(public_key)}`);
+    const response = await axios.get(`https://proof-service.nextnext.id/v1/proof/exists?platform=${platform}&identity=${identity}&public_key=${public_key}`);
 
-    if (response.status === 200) {
-      res.status(200).json(response.data);
-    } else {
-      res.status(response.status).json({ message: 'Error from proof server' });
-    }
+    return res.status(response.status).json(response.data);
   } catch (error) {
-    res.status(500).json({ message: 'Internal Server Error' });
+    console.error(error);
+    return res.status(500).json({ message: 'Internal Server Error' });
   }
 }
