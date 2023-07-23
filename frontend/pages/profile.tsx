@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import useSWR from 'swr'
+import useSWR from "swr";
 
 const Profile = () => {
   return (
@@ -40,7 +40,13 @@ const Profile = () => {
                   />
                 </svg>
               </span>
-              0x59485…82590
+              <Link
+                href={
+                  "https://goerli.etherscan.io/address/0xE255e2404f50a2878C6587271698e81fd30e9D13#nfttransfers"
+                }
+              >
+                0xE255e2404f50a2878C6587271698e81fd30e9D13
+              </Link>
             </p>
             <p className="block mt-6 text-sm text tracking-wide break-words">
               8,888 NFTs of beautiful, Asian women painstakingly-crafted where
