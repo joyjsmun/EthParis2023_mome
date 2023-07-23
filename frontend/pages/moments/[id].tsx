@@ -52,7 +52,7 @@ const Detail = () => {
                 <h1 className={`px-[7rem] text-4xl`}>
                   {`@${data[currentIndex].username}`}
                 </h1>
-                <section className="flex absolute bottom-0 justify-around items-end pl-[5rem] pr-20 pt-[6rem] pb-[3rem] border-none rounded-tr-[350px] w-[40%] bg-tp-sblue/80">
+                <section className="flex absolute bottom-0 justify-around items-end pl-[5rem] pr-20 pt-[6rem] pb-[3rem] border-none rounded-tr-[350px] w-[40%] bg-tp-beige/60">
                   <div className="max-w-[26rem] justify-start">
                     <h2 className="text-3xl">
                       {data[currentIndex].momentTitle}
