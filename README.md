@@ -17,7 +17,7 @@ TippingContract address:
     0xE255e2404f50a2878C6587271698e81fd30e9D13
 
 
-#### Gnosis Chain Chaido contracts:
+### Gnosis Chain Chaido contracts:
 
 Capsule address: 
     0x9cddfBDADdc20f5B6dFd37749E496dB087ABB69c
