@@ -29,7 +29,7 @@ contract MomeNFT is ERC721, ERC721Enumerable, ERC721URIStorage {
     }
 
     function saveMintToCapsule(uint tokenId) internal {
-        Capsule capsule = Capsule(capsule);
+        Capsule(capsule).pushToken(tokenId);
     }
     // The following functions are overrides required by Solidity.
 
