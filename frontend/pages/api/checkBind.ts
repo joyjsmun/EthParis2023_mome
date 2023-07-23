@@ -11,7 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     // Make a request to the Next.id API
-    const response = await axios.get(`https://proof-service.nextnext.id/v1/proof?platform=${encodeURIComponent(platform)}&identity=${encodeURIComponent(identity)}`);
+    const response = await axios.get(`https://proof-service.nextnext.id/v1/proof?platform=${platform}&identity=${identity}`);
 
     // Respond with the data from the Next.id API
     return res.status(200).json(response.data);
