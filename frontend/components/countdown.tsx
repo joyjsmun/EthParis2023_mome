@@ -88,16 +88,16 @@ const PersonalCount = () => {
             <div className="flex flex-col gap-3">
               <Link
                 className="text-4xl text-white  text-center "
-                href="https://testnets.opensea.io/assets/goerli/0x4535104b220fecfd1de2f8edcff94c1d790b79c3/0"
+                href="https://goerli.etherscan.io/address/0xE255e2404f50a2878C6587271698e81fd30e9D13#nfttransfers"
               >
                 Today Capusle Link →
               </Link>
 
               <Link
                 className="text-4xl text-white text-center "
-                href="https://goerli.etherscan.io/tx/0xaf5ca32f5f55d9976515cff719f72b933aed0f3cd2725bd6a92f82dc8dc60cf7"
+                href="https://automation.chain.link/goerli/538007469566721565900532184373459427909814676301138395077664879679194196737"
               >
-                Today NFT Contract Link →
+                Today NFT Automation Chainlink Contract Link →
               </Link>
             </div>
           </div>
