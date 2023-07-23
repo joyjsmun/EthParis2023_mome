@@ -5,8 +5,10 @@
 
 Capsule address: 
     0x57c98e4453864650911aE5380150BEbF02413f96
+    
 MomeNFT address: 
     0xFC43fF3F746F22C2e299413C42A6Bf23c2d335d2
+
 TippingContract address: 
     0x6F122A693bAa57Bb10603dD3aC8a68721a51a7cC
 
@@ -19,8 +21,10 @@ TippingContract address:
 
 Capsule address: 
     0x9cddfBDADdc20f5B6dFd37749E496dB087ABB69c
+    
 MomeNFT address: 
     0x77Dda100716148ab1F4456b6fa596663B14cb0A8
+
 TippingContract address: 
     0x2acFb81FBbb9063BEe1f37dD89677753f045A67d
 
