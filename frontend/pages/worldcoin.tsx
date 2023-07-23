@@ -11,9 +11,9 @@ export default function Worldcoin() {
   return (
     <div className="">
       <IDKitWidget
-        app_id="app_GBkZ1KlVUdFTjeMXKlVUdFT" // obtained from the Developer Portal
-        action="vote_1" // this is your action name from the Developer Portal
-        signal="user_value" // any arbitrary value the user is committing to, e.g. a vote
+        app_id="app_staging_eb4fd40737c8b378b1579903675d3085"
+        action="proposal1"
+        // signal="user_value"
         onSuccess={onSuccess}
         credential_types={["orb", "phone"]} // the credentials you want to accept
         enableTelemetry

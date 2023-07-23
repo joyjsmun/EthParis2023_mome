@@ -31,7 +31,7 @@ export const Header = () => {
       {/* !! font weight  */}
       <div className="text-2xl font-extrabold w-full">
         <Link href={"/"}>
-          <div className="bg-[url('/images/landing/logo.png')] bg-cover w-[12rem] h-11"></div>
+          <div className="bg-[url('/images/landing/logo.png')] bg-cover w-[12rem] h-12"></div>
         </Link>
       </div>
       <div className="text-[1.6vw] text-white border-white border px-10 py-2 rounded-[24px] hover:bg-tp-beige hover:text-black">
