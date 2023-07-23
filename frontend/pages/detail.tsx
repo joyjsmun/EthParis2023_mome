@@ -94,7 +94,7 @@ const Detail = () => {
                     >
                       @username
                     </h1>
-                    <section className="flex justify-around items-end pl-[5rem] pr-20 mt-[16.5rem] pt-[5rem] pb-[3rem] border-none rounded-tr-[350px] w-[40%] bg-tp-sblue/80">
+                    <section className="flex justify-around items-end pl-[5rem] pr-20 mt-[16.5rem] pt-[5rem] pb-[3rem] border-none rounded-tr-[350px] w-[40%] bg-tp-beige">
                       <div className="max-w-[26rem] justify-start">
                         <h2 className="text-3xl">
                           About{" "}
@@ -262,7 +262,7 @@ const DetailView = () => {
                 <h1 className={`px-[7rem] text-4xl ${homemadeApple.className}`}>
                   @username
                 </h1>
-                <section className="flex justify-around items-end pl-[5rem] pr-20 mt-[22.5rem] pt-[6rem] pb-[3rem] border-none rounded-tr-[350px] w-[40%] bg-tp-sblue/80">
+                <section className="flex justify-around items-end pl-[5rem] pr-20 mt-[22.5rem] pt-[6rem] pb-[3rem] border-none rounded-tr-[350px] w-[40%] bg-tp-beige">
                   <div className="max-w-[26rem] justify-start">
                     <h2 className="text-3xl">
                       About{" "}
