@@ -10,9 +10,9 @@ contract MintNFTInto6551Account is Script {
     function run() public {
         uint256 deployerPrivateKey = vm.envUint("OWNER_1_PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
-        MomeNFT(momeNFT).safeMint(address(1), '');
-        MomeNFT(momeNFT).safeMint(address(1), '');
-        MomeNFT(momeNFT).safeMint(address(1), '');
+        MomeNFT(momeNFT).safeMint(0xE255e2404f50a2878C6587271698e81fd30e9D13, '');
+        MomeNFT(momeNFT).safeMint(0xE255e2404f50a2878C6587271698e81fd30e9D13, '');
+        MomeNFT(momeNFT).safeMint(0xE255e2404f50a2878C6587271698e81fd30e9D13, '');
         vm.stopBroadcast();
     }
 }
