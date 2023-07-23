@@ -1,7 +1,7 @@
 # EthParis2023_mome
 ### Smart contracts Repo with Tests:
 
-#### Polygon mumbai:
+### Polygon mumbai:
 
 Capsule address: 
     0x57c98e4453864650911aE5380150BEbF02413f96
@@ -10,8 +10,10 @@ MomeNFT address:
 TippingContract address: 
     0x6F122A693bAa57Bb10603dD3aC8a68721a51a7cC
 
-erc6551 on polygon mumbai:
+
+### erc6551 on polygon mumbai:
     0xE255e2404f50a2878C6587271698e81fd30e9D13
+
 
 #### Gnosis Chain Chaido contracts:
 
