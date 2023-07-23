@@ -41,6 +41,7 @@ const Profile = () => {
                 </svg>
               </span>
               <Link
+                target={"_blank"}
                 href={
                   "https://goerli.etherscan.io/address/0xE255e2404f50a2878C6587271698e81fd30e9D13#nfttransfers"
                 }
