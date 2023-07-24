@@ -1,4 +1,4 @@
-# EthParis2023_mome
+# mome
 
 ## Smart contracts Repo with Tests:
 
