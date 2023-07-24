@@ -34,7 +34,7 @@ const PersonalCount = () => {
       const now = new Date().getTime();
 
       // Calculate the next countdown date as 24 hours from the current time
-      const nextCountDownDate = now + 1 * 20 * 10 * 1000;
+      const nextCountDownDate = now + 15 * 43 * 10 * 1000;
 
       // Update the count down every 1 second
       const interval = setInterval(() => {

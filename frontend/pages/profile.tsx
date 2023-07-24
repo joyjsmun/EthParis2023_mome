@@ -108,7 +108,7 @@ const Profile = () => {
                 Memories
               </button>
               <button className="border rounded-full py-2 px-11 font-bold bg-white hover:bg-tp-beige hover:text-[#C46417]">
-                <Link href="/personalMint">Likes</Link>
+                <Link href="/congratulations">Countdown</Link>
               </button>
             </div>
             <div className="flow-col gap-8 columns-3 overflow-auto h-[90%]">
